@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/button.css">
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+  <title>Document</title>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    body,html {
+      width: 100%;
+      min-height: 100%;
+      background: url('./bg/bgc.jpg') center center ;
+      background-size: 100% auto;
+    }
+    .page {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .mine {
+      text-align: center;
+      display: inline-block;
+      font-size: .6rem;
+      margin-top: .5rem;
+      color: #FEAE1B;
+      -webkit-text-stroke: .001rem #fff;
+      letter-spacing: 0.04em;
+      background-color: ;
+      font-family:Arial,Helvetica,sans-serif
+    }
+    .button {
+      display: inline-block;
+      font-size: .5rem;
+      margin: .5rem;
+    }
+    .girl {
+      width: 10rem;
+      display: none;
+    }
+    .girl img {
+      width: 6rem;
+      height: 100%;
+      display: inline;
+    }
+    /*云朵与仙女cloud1*/
+    .girl4 {
+      position: relative;
+      z-index: 10000;
+    }
+    .cloud {
+      position: absolute;
+      top: 3.5rem;
+      animation: move 8s infinite alternate;
+      z-index: 10;
+    }
+    @keyframes move {
+      from {
+        transform: translateX(-1rem);
+      } to {
+        transform: translateX(3rem);
+      }
+    }
+    .cloud1 {
+      left: -1rem;
+      top: 1.4rem;
+    }
+    .cloud2 {
+      left: 1rem;
+      top: 2.4rem;
+    }
+    .cloud3 {
+      left: 2rem;
+      top: 3.4rem;
+      animation: move1 8s infinite alternate;
+    }
+    .cloud4 {
+      left: 4.1rem;
+      top: 2rem;
+      animation: move1 8s infinite alternate;
+    }
+    @keyframes move1 {
+      from {
+        transform: translateX(1rem);
+      } to {
+        transform: translateX(-2rem);
+      }
+    }
+    .btn5 {
+      margin-top: 2rem;
+      vertical-align: middle;
+    }
+    .btn5 span {
+      font-size: .4rem;
+      padding-left: .5rem;
+      color: 	#FF3E96;
+      display: inline-block;
+    }
+    .girl5 {
+      width: 10rem;
+      position: relative;
+      height: 12rem;
+    }
+    .girl5 img {
+      display: inline-block;
+      position: absolute;
+      width: 3rem;
+      height: 5rem;
+    }
+    .girl5 .look1 {
+      width: 4rem;
+      left: .5rem;
+      top: -0.5rem;
+    }
+    .girl5 .look2 {
+      left: 6.5rem;
+      top: 6rem;
+    }
+    .girl5 .look3 {
+      width: 5rem;
+      left: 1.6rem;
+      top: 1.5rem;
+    }
+    .girl5 .look4 {
+      width: 5rem;
+      left: -.8rem;
+      top: 1.5rem;
+    }
+    .girl5 span {
+      font-size: .5rem;
+      color: orange;
+      display: inline-block;
+      position: absolute;
+      left: 5.2rem;
+      top: 5.5rem;
+      width: 4.5rem;
+      height: 1.2rem;
+      text-align: center;
+      line-height: 1.2rem;
+      background: #beceeb;
+      border-radius: 50%;
+    }
+    .autor {
+      display: inline-block;
+      color: #9ACD32;
+      font-size: .5rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    .box {
+      width: 10rem;
+      height: 10rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 2rem;
+      background: url('./bg/game.png')  no-repeat;
+      background-position: 0 0;
+      background-size: 100% auto;
+      animation: box 5s steps(5) both;
+      z-index: 10000;
+    }
+    .mb {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: rgba(0,0,0,.8);
+      z-index: 1000;
+    }
+    @keyframes box {
+      from {
+        background-position: 0 0;
+      } to {
+        /*一般都是做左上角为起点*/
+        background-position: 0 -50rem;
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+   <span class="mine">这是我的仙女姐姐</span>
+    <button class='btn1 button button-glow button-rounded button-highlight'>想看我漂亮的仙女姐姐嘛</button>
+    <div class="girl animated rotateIn girl1">
+      <img class="bounce" src="bg/girl.JPG" alt="">
+    </div>
+    <button class='btn2 button button-glow button-rounded button-raised button-primary'>送给仙女姐姐仙女棒</button>
+    <div class="girl animated jello girl2">
+      <img class="bounce" src="bg/bangbang.png" alt="">
+    </div>
+    <button class='btn3 button button-glow button-rounded button-caution'>我眼中的仙女姐姐</button>
+    <div class="girl animated lightSpeedIn girl3">
+      <img class="bounce" src="bg/newgirl.png" alt="">
+    </div>
+    <button class='btn4 button button-glow button-rounded button-royal'>我是仙女的棉花糖</button>
+    <div class="girl animated  girl4">
+      <img class="fairy" src="bg/newgirl.png" alt="">
+      <img class="cloud cloud1" src="bg/yunduo.png" alt="">
+      <img class="cloud cloud2" src="bg/yunduo.png" alt="">
+      <img class="cloud cloud3" src="bg/yunduo.png" alt="">
+      <img class="cloud cloud4" src="bg/yunduo.png" alt="">
+    </div>
+    <button class='btn5 button button-glow button-rounded button-highlight'>小男孩望着天空<span>多点两下哦</span></button>
+    <div class="girl animated lightSpeedIn girl5">
+      <img class="look3" src="bg/yunduo.png" alt="">
+      <img class="look4" src="bg/yunduo.png" alt="">
+      <img class=" look1" src="bg/newgirl.png" alt="">
+      <img class=" look2" src="bg/boy.png" alt="">
+      <span>快看呀！仙女姐姐</span>
+    </div>
+    <span class='autor'>JerryLee出品—致我可爱的仙女姐姐</span>
+  </div>
+  <div class="box"></div>
+  <div class="mb"></div>
+  <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('.btn1').click(function() {
+      $('.girl1').css('display', 'block');
+    })
+    $('.btn2').click(function() {
+      $('.girl2').css('display', 'block');
+    })
+    $('.btn3').click(function() {
+      $('.girl3').css('display', 'block');
+    })
+    $('.btn4').click(function() {
+      $('.girl4').css('display', 'block');
+    })
+    $('.btn5').on('click', function() {
+      $('.girl5').css('display', 'block');
+    })
+    $('.box').on('webkitAnimationEnd', function() {
+      $('.box').css('display', 'none');
+      $('.mb').css('display', 'none');
+    })
+  </script>
+</body>
+</html>
